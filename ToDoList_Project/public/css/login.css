@@ -1,0 +1,75 @@
+.mainContainer{
+    margin: 0px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.loginTable{
+    margin: 30px auto;
+    margin: 2;
+    
+    width: 83%;
+    text-align: center;
+    border-radius: 14px;
+}
+.loginTable h1{
+    padding-top: 130px;   
+    animation: loginanimationh1 2s forwards;
+    
+}
+#inputLogin{
+    color:#216cf3d9;
+    height: 25px;
+    width: 170px;
+    margin: 20px;
+    font-weight: 700;
+    animation: inputLoginanimation 2s forwards;
+}
+#inputLogin:hover{
+    color: blue;
+    height: 26px;
+    width: 172px;
+}
+form p{
+    padding: 0px 0px 20px;
+}
+.inputRadius {
+    border-radius: 5px;
+}
+.signUp{
+    color:#216cf3d9;
+    text-decoration: none;
+}
+.signUp:hover{
+    color: blue;
+}
+
+.error{
+    border :5px red solid;
+}
+.errorMessage{
+    margin: 0;
+    margin-bottom: 5px;
+    width: 100%;
+    color: red;
+}
+@keyframes loginanimationh1{
+    0%{
+        color: #216cf3d9;
+        word-spacing: 18px;        
+        opacity: 0.6;
+    }
+
+    100%{        
+        opacity: 1;
+    }
+}
+@keyframes inputLoginanimation{
+    0%{
+        color: black;
+        transform: translateY(12px); 
+        opacity: 0.4;       
+    }
+    100%{
+        transform: translateY();  
+        opacity: 1;      
+    }
+}

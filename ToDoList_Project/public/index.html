@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/index.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <style>
+        iframe {
+    display: block;
+    position: relative;
+    z-index: -1;
+
+}
+    </style> -->
+    <title>index</title>
+</head>
+<body>
+    <div class="section"> 
+        <!-- add task form & update task form-->
+        <div class="popup-update-area hidden"></div>
+        <div class="popup-wrapper hidden">
+            <div class="add-memo">
+                <form class="add-form">
+                    <form action="http://localhost:8080/" method="POST"> 
+                        <svg  id='add-memo-delete-btn' width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm0 10.293l5.293-5.293.707.707-5.293 5.293 5.293 5.293-.707.707-5.293-5.293-5.293 5.293-.707-.707 5.293-5.293-5.293-5.293.707-.707 5.293 5.293z"/></svg>                       
+                        <div>
+                            <label for="type">Type</label>        
+                            <select id="type" name ="type" required>
+                                <option value="family">Family</option>
+                                <option value="work">Work</option>
+                                <option value="personal">Personal</option>
+                            </select>  <br>
+                        </div>
+                        <div>
+                            <label for="name">Memo Title</label>                                       
+                            <input id="name" name="name" type="text" required>  
+                            <br>               
+                        </div>
+                        <div>
+                            <label for="duedate">Due Date</label>                                       
+                            <input id="duedate" name="duedate" type="date" required><br>                
+                        </div>
+                       <label for="message"></label>
+                       <textarea id="description" name="description" required rows="8" cols="40"></textarea>
+                        <input id="submit-btn" type="submit" value="Add">
+                    </form>
+                </form>
+            </div>
+        </div> 
+        <!-- add task form & update task form-->
+
+        <!-- ---------------NavBar---------------- -->
+        <div class="nav">
+            <div class="nav-menu">
+              <h2 class="greeting">To Do List</h2>
+              <a class="nav-menu-item show-all-button" id='nav-item1' href="http://localhost:8080/index.html">All</a>              
+              <a class="nav-menu-item" id='nav-item2' href="#">Work</a>
+              <a class="nav-menu-item" id='nav-item3' href="#">Family</a>
+              <a class="nav-menu-item" id='nav-item4' href="#">Personal</a>
+              <a class="nav-menu-item calendar" id='nav-item5' href="http://localhost:8080/calendar.html">Calendar</a>
+              <a class="nav-menu-item" id='nav-item6' href="./login_page.html">LogOut</a>
+            </div>
+            <!--  -->
+        </div>    
+        <!-- ---------------NavBar---------------- -->
+        <div class="rightMain">
+            <div class="welcome-text">
+                <h2>Welcome Back ,  Michael</h2>
+                <p class="today-date"></p>
+            </div>
+            <div class="miniFunction" id="top">
+                <div id='gridFun1' class="gridFunction"><img src="./img/17041526211553239377.svg"> </div>
+                <!-- <div id='gridFun2' class="gridFunction"><img src="./img/4550269981554892216.svg"> </div> -->
+                <div id='gridFun3' class="gridFunction" title="0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.997 13.985c.01 1.104-.88 2.008-1.986 2.015-1.105.009-2.005-.88-2.011-1.984-.01-1.105.879-2.005 1.982-2.016 1.106-.007 2.009.883 2.015 1.985zm-.978-3.986c-1.104.008-2.008-.88-2.015-1.987-.009-1.103.877-2.004 1.984-2.011 1.102-.01 2.008.877 2.012 1.982.012 1.107-.88 2.006-1.981 2.016zm7.981-4.014c.004 1.102-.881 2.008-1.985 2.015-1.106.01-2.008-.879-2.015-1.983-.011-1.106.878-2.006 1.985-2.015 1.101-.006 2.005.881 2.015 1.983zm-12 15.847c4.587.38 2.944-4.492 7.188-4.537l1.838 1.534c.458 5.537-6.315 6.772-9.026 3.003zm14.065-7.115c1.427-2.239 5.846-9.748 5.846-9.748.353-.623-.429-1.273-.975-.813 0 0-6.572 5.714-8.511 7.525-1.532 1.432-1.539 2.086-2.035 4.447l1.68 1.4c2.227-.915 2.868-1.04 3.995-2.811zm-12.622 4.806c-2.084-1.82-3.42-4.479-3.443-7.447-.044-5.51 4.406-10.03 9.92-10.075 3.838-.021 6.479 1.905 6.496 3.447l1.663-1.456c-1.01-2.223-4.182-4.045-8.176-3.992-6.623.055-11.955 5.466-11.903 12.092.023 2.912 1.083 5.57 2.823 7.635.958.492 2.123.329 2.62-.204zm12.797-1.906c1.059 1.97-1.351 3.37-3.545 3.992-.304.912-.803 1.721-1.374 2.311 5.255-.591 9.061-4.304 6.266-7.889-.459.685-.897 1.197-1.347 1.586z"/></svg> </div>
+                
+            </div>
+            <div class="swatches">
+                <div id="color-Box1" class="colorBox bg-red"></div>
+                <div id="color-Box2" class="colorBox bg-orange"></div>
+                <div id="color-Box3" class="colorBox bg-yellow"></div>
+                <div id="color-Box4" class="colorBox bg-green"></div>
+                <div id="color-Box5" class="colorBox bg-green2"></div>
+                <div id="color-Box6" class="colorBox bg-blue"></div>
+                <div id="color-Box7" class="colorBox bg-purple"></div>
+                <div id="color-Box8" class="colorBox bg-gray"></div>
+                <div id="color-Box9" class="colorBox bg-black"></div>
+            </div>
+            <div class="countDiv"><span id="count-memo">3</span>&nbsp; Task</div>
+            <div class="memolist">
+                <!-- <div class="todayTodo"><h2>TODAY</h2></div> -->
+                <!-- <div class="memo">
+                    <div class="memoTopBorder bg-blue"></div>
+                    <div class="memoTopBar">
+                        <p class="memoType blue">Management</p> 
+                        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm0 10.293l5.293-5.293.707.707-5.293 5.293 5.293 5.293-.707.707-5.293-5.293-5.293 5.293-.707-.707 5.293-5.293-5.293-5.293.707-.707 5.293 5.293z"/></svg>                           
+                    </div>
+                    <div class="memoContent">
+                        Prepare end of year report for board
+                        of directors
+                    </div>
+                    <div class="memoMiniFunction">                     
+                        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M24 4.685l-16.327 17.315-7.673-9.054.761-.648 6.95 8.203 15.561-16.501.728.685z"/></svg>
+                        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M8.071 21.586l-7.071 1.414 1.414-7.071 14.929-14.929 5.657 5.657-14.929 14.929zm-.493-.921l-4.243-4.243-1.06 5.303 5.303-1.06zm9.765-18.251l-13.3 13.301 4.242 4.242 13.301-13.3-4.243-4.243z"/></svg>
+                    </div>
+                </div>  -->
+                
+            </div>
+            <button class="add-btn">+</button>            
+        </div>
+    </div>
+    </div>
+        <div class="footer">            
+            <button value='on' id='footerBtn1'><svg  width="24"height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M24 18v1h-24v-1h24zm0-6v1h-24v-1h24zm0-6v1h-24v-1h24z" fill="#1040e2"/><path d="M24 19h-24v-1h24v1zm0-6h-24v-1h24v1zm0-6h-24v-1h24v1z" /></svg></button>          
+            <button value="on" id='footerBtn4'><a href="#top"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm5.247 15l-5.247-6.44-5.263 6.44-.737-.678 6-7.322 6 7.335-.753.665z"/></svg></a></button>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,475 @@
+*{
+    margin: 0;
+    padding: 0;     /* 0819add */
+    font-family: 'Noto Sans JP', sans-serif;
+
+}
+
+.section{
+    display: flex;
+    height: 610px;
+}
+.hidden{
+    display: none ;
+}
+.show{
+    display: block !important;
+    /* display: flex; */
+}
+/* navbar */
+/* .container {
+    display: flex;
+    overflow: hidden;
+  } */
+  .nav{
+    flex: 1;
+    display: block;
+    background-color: #216cf3d9;
+  }
+  .nav-menu{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Noto Sans JP', sans-serif;
+  }
+  .nav-greet{
+    display: flex;
+    align-content: flex-end;
+    padding: 5px;
+    color: white;
+  }
+  h2.greeting{
+    background:#216cf3d9;
+    box-shadow: 2px 4px 5px rgb(71 61 128 / 9%);
+    height: fit-content;
+    width: max-content;
+    padding: 45px 80px;   
+    color: white;
+  }
+  .nav-menu-item{
+    box-shadow: 2px 4px 5px rgb(71 61 128 / 9%);
+    color: #ffffffcf;
+    margin: 5px;
+    padding: 18px;
+    font-weight: 700;
+  }
+  .nav-menu-item:hover{
+    color: white;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+  } 
+  .main-body{
+    flex: 5;
+    width: 75%;
+    height: 100vh;   
+  }
+  .mobile-nav{
+    display: none;
+  }
+  .mobile-nav-bottom{
+    display: none;
+  }
+
+/* navbar */
+
+
+
+.popup-wrapper, .popup-update-area {    
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.add-memo{    
+    font-family: 'Noto Sans JP', sans-serif;
+    margin-top: 128px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid;
+    width: fit-content;    
+    background: white;    
+}
+#add-memo-delete-btn,#popup-memo-close-button{
+    left: 290px;
+    position: relative;
+    margin: 5px;
+}
+
+form textarea{    
+    display: block;
+    margin: 5px;
+}
+form div{
+    padding: 4px;
+}
+div select{
+    border-radius: 3px;
+    width: 132px;
+    height: 23px;   
+}
+#submit-btn, #update-btn{
+    padding: 4px;
+    width: 56px;
+    margin: 10px;
+    border-radius: 12px;
+    background: rgba(59, 59, 255, 0.7);
+    color: white;    
+}
+
+.rightMain{
+    width: 100%; 
+    height: 600px;    
+    overflow: auto;          
+}
+.welcome-text{
+    padding: 10px;
+    margin: 10px 10px;
+    color: #216cf3d9;
+}
+.today-date {
+    word-spacing: 2px;
+}
+
+
+.miniFunction{
+    display: flex;
+    justify-content: flex-end;
+}
+#gridFun1 img:hover{
+    width: 37px;
+}
+#gridFun3{
+    margin-right: 4px;
+    padding: 7px;
+}
+.gridFunction img{
+    width: 35px;
+    padding: 0px 10px;
+}
+.swatches{
+    display: none;
+    width: 80px;    
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid gray;    
+    position: absolute;
+    right: 35px;
+    background: white;
+    
+}
+.colorBox{    
+    padding: 1px;
+    margin: 5px;
+    width: 13px;
+    height: 13px;
+}
+.memolist{         
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.memo{
+    width: 20%;
+    margin: 16px;
+    box-shadow: 2px 4px 5px rgb(71 61 128 / 22%);
+    background: white;
+}
+
+/* color */
+.blue{
+    color:#216cf3d9;
+}
+.orange{
+    color:#f46236d1;
+}
+.green{
+    color:#2ec578c7;
+}
+.yellow{
+    color:#f3d921d9;
+}
+.purple{
+    color:#673ab7d4;
+}
+.bg-red{
+    background-color:#f00555d9;;
+}
+.bg-orange{
+    background-color:#f46236d1;
+}
+.bg-yellow{
+    background-color:#f3d921d9;
+}
+.bg-green{
+    background-color:#2ec578c7;
+}
+.bg-green2{
+    background-color:#00bcd4;
+}
+.bg-blue{
+    background-color:#216cf3d9;
+}
+.bg-purple{
+    background-color:#673ab7d4;
+}
+.bg-gray{
+    background-color: gray;
+}
+.bg-black{
+    background-color: black;
+}
+.work{
+    background:#216cf3d9;
+}
+.family{
+    background:#f46236d1;
+}
+.personal{
+    background:#2ec578c7;
+}
+.bg-yellow{
+    background:#f3d921d9;
+}
+.bg-purple{
+    background:#673ab7d4;
+}
+
+.todoDate{
+    display: none;
+}
+.memoTopBorder{    
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+    height: 4px;
+}
+.delete-btn{
+    border-radius: 100px;
+    padding: 3px;    
+}
+.delete-btn:hover{
+    background: #5e3ab712;
+}
+.memoTopBar{
+    display: flex;
+    justify-content: space-between;
+}
+.memoType{
+    border-radius: 7px;
+    width: fit-content;
+    padding: 6px;
+    background: lavender;
+    margin: 13px;
+}
+
+.memoContent{    
+    padding: 0px 10px 10px 10px;
+    line-height: 20px;
+}
+.memoMiniFunction{
+    padding: 10px;
+}
+
+/* mobile */
+
+/* .mobileSeccion{
+    width: 100%;
+    background: #9e9e9e26;  
+} */
+.mobileTopBar{
+    display: flex;
+    justify-content: space-between;
+}
+.todayTodo{
+    display: none;
+    padding: 15px;
+    color: #2424cee3;
+}
+.tomorrowTodo{
+    display: none;
+    padding: 15px;
+    color:#f3d921d9;
+}
+
+.Category{
+    padding: 5px 14px;
+    margin: 13px;
+    border-radius: 11px;
+    background: #216cf33d;;
+
+}
+.mobileMiddle{
+    height: 450px;
+    background: #f5deb32e;
+}
+.add-btn{
+    /* visibility: hidden; */
+    background:#216cf3d9;
+    border-radius: 79px;
+    color: #ffffffcf;
+    font-size: 36px;
+    padding: 2px 18px;
+    position: fixed;
+    bottom: 75px;
+    right: 20px;
+    z-index: 100;
+}
+.add-btn:hover{
+    color: white;
+    padding: 3px 20px;   
+    
+}
+.countDiv{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px 10px;
+}
+.footer{
+    display: none;
+    justify-content: space-between;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    background: white;
+    box-shadow: 14px 5px 12px rgb(71 61 128 / 67%);
+}
+.footer button{
+    background: white;
+    border: none;
+    margin: 0px 12px;
+    padding: 10px 13px;
+}
+
+.footer button:hover{    
+    box-shadow: inset 5em 10em #26262812;
+}
+    
+
+@media screen and (max-width: 1060px) {   
+    .nav{
+        position: fixed;
+        display: none;        
+        z-index: 1;
+    }   
+    .footer{
+        display: flex;
+        z-index: 3;
+    }
+    .memo{
+        width: 35%;
+    }
+  }
+@media screen and (max-width:500px){    
+    
+     .nav-menu{
+        background-color: #216cf3d9;
+        display: flex;
+        flex-direction: column;
+    }
+    
+      .visibility{
+        visibility:visible;
+      }
+      .main-body{
+        width: 100vw;
+        height: 100vh;    
+      }
+      .mobile-nav{
+        /* display: block; */
+        /* background-color: white; */
+        display: none;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        /* z-index: -1; */
+      }
+      .nav-banner{
+        height: 15vh;
+        /* background-color: rgba(59, 59, 255, 0.7); */
+        padding: 5px;
+      }
+      /* .nav-banner h3{
+         color: white; 
+        position: relative;
+        z-index: 1;
+        top: 50px
+      } */
+      .nav-dropdown{
+        display: flex;
+        flex-direction: column;  
+        padding: 5px;
+      }
+      .nav-dropdown-btn{
+        color: black;
+        text-decoration: none;
+        padding: 5px;
+      }
+      .nav-dropdown-item{
+        color: black;
+        text-decoration: none;
+        padding: 5px;
+      }
+      hr{
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .nav-function{
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+      }
+      .nav-function-item{
+        color: black;
+        text-decoration: none;
+        padding: 5px;
+      }
+      .mobile-nav-bottom{
+        display: flex;    
+        position: sticky;
+        top: 95vh;
+        justify-content: space-around;
+        align-content: center;
+        z-index: 1;
+      }
+      .mobile-nav-icon{
+        font-size: 30px;    
+      }
+      
+    /* .fakeBar{
+        display: none;
+    } */
+    .welcome-text{
+        display: none;
+    }
+
+     .memo{        
+        width: 100%;        
+    }     
+    
+    /* .todayTodo{
+        display: block;
+    } 
+    .tomorrowTodo{
+        display: block;
+    } */
+    
+    .add-btn{
+        visibility: visible;
+    }   
+    
+    .memolist{        
+        display: flex;
+        position: relative;
+        z-index: -2;
+    }
+    .memoContent{
+        color: #2424cee3;
+        margin: auto;
+        padding: 17px 10px;
+    } 
+}
