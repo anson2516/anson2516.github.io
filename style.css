@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans',Arial,sans-serif;
+}
+.home{
+    background-image: url(./img/bk1.jpg);
+    /* background-size:cover; */
+    background-size: 100% 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    color: white;
+    
+}
+h1{
+    font-weight: bolder;
+    font-family: 'blacker-sans-display-trial-extralight-9', sans-serif;
+    text-shadow: 5px 5px 3px #000;
+    font-size: -webkit-xxx-large;
+}
+h2{
+    text-align: center;
+    letter-spacing: 1px;
+}
+nav{
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    background: rgb(12 12 12 / 8%);
+}
+#logo{
+    padding: 18px;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.navBar{
+    display: flex;
+    width: fit-content;
+    justify-content: space-around;
+    list-style: none;
+}
+.navbarItem{
+    display: flex;
+    margin: 0 10px;
+    align-items: center;
+    font-weight: bolder;
+    color: #f0f0f0c7;
+    cursor: pointer;
+}
+.navbarItem:hover{
+    transform: scale(1.1);
+    color: white;
+}
+.intro{
+    line-height: 68px;
+    margin-top: 168px;
+    text-align: center;
+    width: 100%;
+}
+.scrollDownBtn{
+    fill: white;
+    display: block;
+    position: absolute;
+    bottom: 60px;
+    margin: auto;
+    display: block;
+    cursor: pointer;
+    left: 0;
+    right: 0;
+    animation: haha 2s infinite;
+}
+.aboutMe{
+    border-bottom: solid 1px #8080802e;
+    padding: 60px;
+    background: white;
+    color: #5f5b5b;
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content>p{
+    line-height: 2rem;
+    font-size: 1.5rem;
+    max-width: 483px;;
+}
+#anson{
+    max-width: 268px;
+}
+#skills{
+
+}
+.mySkills{
+    border-bottom: solid 1px #8080802e;
+    padding: 60px;
+    text-align: center;  
+    background: #ebebeb;  
+}
+.works{
+    width: 100%;
+    border-bottom: solid 1px #8080802e;
+    padding-top: 60px;
+    background: white;
+    color: #5f5b5b;
+}
+.assessment{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: center;
+}
+.assessmentImg{
+    width: 28vw;
+    height: 300px;
+    margin: 5px 10px;
+    border: solid 1px; 
+}
+footer{
+    position: fixed;
+    bottom: 0px;
+}
+
+@keyframes haha{
+    0%{
+        transform: translate(0,0);
+    }
+    50%{
+        transform:translate(0,20px);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
