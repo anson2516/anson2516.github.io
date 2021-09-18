@@ -71,7 +71,7 @@ nav{
     cursor: pointer;
     left: 0;
     right: 0;
-    animation: haha 2s infinite;
+    animation: hang1 2s infinite;
 }
 .aboutMe{
     border-bottom: solid 1px #8080802e;
@@ -103,6 +103,7 @@ nav{
 }
 .works{
     width: 100%;
+    height: 70vh;
     border-bottom: solid 1px #8080802e;
     padding-top: 60px;
     background: white;
@@ -118,20 +119,46 @@ nav{
 .assessmentImg{
     width: 28vw;
     height: 300px;
-    margin: 5px 10px;
+    margin: 5px 20px;
     border: solid 1px; 
+    animation: hang2 2s infinite;
 }
 footer{
-    position: fixed;
-    bottom: 0px;
+    height: 128px;
+    background: #5f5b5b;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    letter-spacing: 1px;
+}
+.contactInf {
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    font-size: 20px;
+}
+.contactInf a{
+    color: white;
 }
 
-@keyframes haha{
+@keyframes hang1{
     0%{
         transform: translate(0,0);
     }
     50%{
         transform:translate(0,20px);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+@keyframes hang2{
+    0%{
+        transform: translate(0,0);
+    }
+    50%{
+        transform:translate(0,5px);
     }
     100%{
         transform: translate(0,0);
