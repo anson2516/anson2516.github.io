@@ -1,3 +1,7 @@
+body{
+    margin: 0;
+    padding: 0;
+}
 .Big-master{
     display: flex;
     flex-direction: column;
@@ -56,6 +60,7 @@ a,ul,li{
 
 .top-rbc{
     margin: 0 8px;
+    cursor: pointer;
 }
 
 /* homepage */
@@ -123,9 +128,6 @@ a,ul,li{
     padding-left: 24px;
 
 }
-.homepage2-l-fonsize{
-
-}
 
 .homepage2-right{
     width: 40%;
@@ -162,18 +164,7 @@ a,ul,li{
     width:100%;
     height: auto;
 }
-.h2rc2{
 
-}
-.h2rc3{
-
-}
-.h2rc4{
-
-}
-.h2rc5{
-
-}
 
 /* start-learning */
 
@@ -275,4 +266,77 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content:space-between;
+}
+@media only screen and (max-width: 1260px){
+    *{
+        font-size: 1.1rem;
+    }
+    .top-left-bar{
+        display: none;
+    }
+    .top-right-bar{
+        margin: 0;
+        width: 100%;
+    }
+    .top-right-bar-column{
+        justify-content: space-evenly;
+        font-size: 1.2rem;
+        padding: 0;
+        width: 100%;
+    }
+    .homepage1-left{
+        width: 100%;
+        margin: 0;
+    }
+    .homepage1-right{
+        width: unset;
+        padding-top: unset;
+    }
+    .homepage1{
+        flex-direction: column;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    .homepage1-right-content{
+        width: unset;
+    }
+    .homepage2{
+        flex-direction: column;
+    }
+    .homepage2-left{
+        width: unset;
+    }
+    .homepage2-left-top-img {
+        width: 98%;
+        padding: 5px;
+    }
+    .homepage2-left-lower{
+        width: unset;
+        padding: 24px;
+    }
+    .homepage2-right,.thesis-exhibit-lower-left{
+        width: unset;
+        padding: 0;
+    }
+    .six-card{
+        padding: 0px;
+        justify-content: center;
+    }
+    .card-content ,.card-img{
+        width: 100%;
+    }
+    .thesis-exhibit{
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    .thesis-exhibit-lower{
+        flex-direction: column;
+    }
+    footer{
+        background: gray;
+        color: white;
+        padding: 10px;
+        font-size: 1.1rem;
+    }
 }
