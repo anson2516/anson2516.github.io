@@ -10,26 +10,27 @@
     <title>Anson Leung Profilo</title>
 </head>
 <body>
-    <div class="home">
+    <div id="home">
         <nav>
-            <p id="logo">Profilo</p>
+            <a href="#home" id="logo">Profilo</a>
             <ul class="navBar">
-                <li class="navbarItem">ABOUT ME</li>
-                <li class="navbarItem">MY SKILLS</li>
-                <li class="navbarItem">WORKS</li>
-                <li class="navbarItem">CONTANT ME</li>
+                <li class="navbarItem" ><a href="#aboutMe">ABOUT ME</a></li>
+                <li class="navbarItem" ><a href="#mySkills">MY SKILLS</a></li>
+                <li class="navbarItem" ><a href="#works">WORKS</a></li>
+                <li class="navbarItem" ><a href="#contact">CONTACT</a></li>
             </ul>
         </nav> 
         <div data-aos="fade-down" data-aos-duration="1000" class="intro">
-            <h1>HI, MY NAME IS ANSON</h1> 
+            <h1>Hi ,</h1>
+            <h1>MY NAME IS ANSON</h1> 
             <h1>I'M A JUNIOR WEB DEVELOPER</h1>
         </div>
-        <!-- <img class="scrollDownBtn" src="./img/iconmonstr-arrow-65-240.png"> -->
-        <svg class="scrollDownBtn"  xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/></svg>
+        
+        <a href="#aboutMe"><svg class="scrollDownBtn"  xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/></svg></a>
     </div> 
-    <div class="aboutMe">
+    <div id="aboutMe">
         <h2>ABOUT ME</h2>
-        <div  data-aos="flip-right" data-aos-duration="900" class="content">
+        <div  data-aos="flip-right" data-aos-duration="1000" class="content">
             <p>
                 I am a committed, driven and hardworking person who is
                 eager to learn new skills. I am seeking a position in the field
@@ -40,11 +41,11 @@
             <img id="anson" src="./img/img1.png">
         </div>
     </div>
-    <div class="mySkills">
+    <div id="mySkills">
         <h2>MY SKILLS</h2>
         <img src="./img/skills.png">
     </div>
-    <div class="works">
+    <div id="works">
         <h2>MY WORKS (Assessment + GroupProject)</h2>       
        <div class="assessment">
             <a target="_blank" href="./Assessment/HTMLCSS/Assessment/index.html" ><img class="assessmentImg" src="./img/html_css_ass.png" title="Html/Css Assessment" alt="html_css_assessment"></a>
@@ -52,7 +53,7 @@
             <a target="_blank" href="https://github.com/anson2516/TodoListGroupProject"><img class="assessmentImg" src="./img/todoListProject.png" title="TodoListGroupProject" alt="react_assessment"></a>
        </div>
     </div>  
-    <footer>
+    <footer id="contact">
         <h2>CONTACT</h2>
         <ul class="contactInf">
             <li>Email : alhca182@gamil.com</li>
@@ -62,6 +63,5 @@
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script> AOS.init(); </script>
-    
 </body>
 </html>

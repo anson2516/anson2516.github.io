@@ -3,7 +3,10 @@
     padding: 0;
     font-family: 'Open Sans',Arial,sans-serif;
 }
-.home{
+html{
+    scroll-behavior:smooth;
+}
+#home{
     background-image: url(./img/bk1.jpg);
     /* background-size:cover; */
     background-size: 100% 100%;
@@ -23,41 +26,50 @@ h2{
     letter-spacing: 1px;
 }
 nav{
-    /* position: fixed; */
+    width: 100%;
+    position: fixed;
     top: 0;
     left: 0;
     margin: 0;
     display: flex;
     justify-content: space-between;
-    background: rgb(12 12 12 / 8%);
+    background: rgb(12 12 12 / 30%);
+    z-index: 3;
 }
 #logo{
     padding: 18px;
     font-size: xx-large;
     font-weight: bolder;
+    color: white;
+    text-decoration: none;
 }
 
 .navBar{
     display: flex;
-    width: fit-content;
     justify-content: space-around;
     list-style: none;
+    width: 100%; 
+    transition: top 0.3s;
 }
-.navbarItem{
+.navbarItem {
     display: flex;
     margin: 0 10px;
     align-items: center;
     font-weight: bolder;
-    color: #f0f0f0c7;
     cursor: pointer;
+    z-index: 5;
 }
-.navbarItem:hover{
+.navbarItem a{
+    color: #f0f0f0c7;
+    text-decoration: none;
+}
+.navbarItem a:hover{
     transform: scale(1.1);
     color: white;
 }
 .intro{
     line-height: 68px;
-    margin-top: 168px;
+    padding-top: 168px;
     text-align: center;
     width: 100%;
 }
@@ -73,7 +85,7 @@ nav{
     right: 0;
     animation: hang1 2s infinite;
 }
-.aboutMe{
+#aboutMe{
     border-bottom: solid 1px #8080802e;
     padding: 60px;
     background: white;
@@ -92,20 +104,21 @@ nav{
 #anson{
     max-width: 268px;
 }
-#skills{
-
-}
-.mySkills{
+#mySkills{
+    box-sizing: border-box;
     border-bottom: solid 1px #8080802e;
-    padding: 60px;
+    padding: 60px 0px;
     text-align: center;  
     background: #ebebeb;  
-}
-.works{
     width: 100%;
-    height: 70vh;
+}
+#mySkills img{
+    width: 65%;
+}
+#works{
+    width: 100%;
     border-bottom: solid 1px #8080802e;
-    padding-top: 60px;
+    padding: 60px 0px;
     background: white;
     color: #5f5b5b;
 }
@@ -123,7 +136,7 @@ nav{
     border: solid 1px; 
     animation: hang2 2s infinite;
 }
-footer{
+#contact{
     height: 128px;
     background: #5f5b5b;
     padding: 15px;
@@ -162,5 +175,67 @@ footer{
     }
     100%{
         transform: translate(0,0);
+    }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+   h1{
+       font-size: revert;
+   } 
+   nav{
+       flex-direction: column;
+       position: unset;
+   }
+   .navBar{
+       flex-direction: column;
+       width: 100%;
+   }
+   .navbarItem{
+       justify-content: center;
+       padding: 8px;
+       font-size: 1.5rem;
+   }
+   #logo{
+       text-align: center;
+   }
+    #logo {
+        padding: 10px;
+        font-size: xxx-large;
+        font-weight: bolder;
+        letter-spacing: 3px;
+    }
+   .intro{
+       margin-top: 70px;
+       padding-top: 0;
+   }
+   .content{
+       flex-direction: column-reverse;
+   }
+    .scrollDownBtn{
+        display: none;
+    }
+    #aboutMe{
+        padding: 60px 15px;
+    }
+
+    .assessment{
+        text-align: center;
+        flex-direction: column;
+    }
+    .assessmentImg{
+        width: 80vw;
+        animation: none;
+    }
+    .assessmentImg:hover{
+        transform:scale(1.02);
+    }
+    .contactInf{
+        padding: 0;
+        flex-direction: column-reverse;
+    }
+    .contactInf li{
+        margin-top: 10px;
     }
 }
