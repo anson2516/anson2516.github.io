@@ -11,7 +11,7 @@ li{
     color: #0089ffa8;
 }
 li:hover {
-    color: white;
+    color: black;
     transform: scale(1.2);
 }
 html{
