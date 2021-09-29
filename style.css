@@ -153,6 +153,9 @@ nav{
     border: solid 1px; 
     animation: hang2 2s infinite;
 }
+a.assItem:hover {
+    transform: scale(1.05);
+}
 #contact{
     height: 128px;
     background: #5f5b5b;
