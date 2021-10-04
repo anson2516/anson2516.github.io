@@ -81,8 +81,9 @@ nav{
     margin-right: auto;
     padding-top: 150px;
 }
-#temperature{
+.weather p{
     text-align: center;
+    margin-top: 2px;
     font-size: large;
 }
 .navbarItem a:hover{
@@ -235,6 +236,9 @@ a.assItem:hover {
         font-size: xxx-large;
         font-weight: bolder;
         letter-spacing: 3px;
+    }
+    .weather{
+        display: none;
     }
    .intro{
        margin-top: 70px;
