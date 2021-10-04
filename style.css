@@ -167,6 +167,12 @@ nav{
 a.assItem:hover {
     transform: scale(1.05);
 }
+.assItem p{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+}
 #contact{
     height: 128px;
     background: #5f5b5b;
