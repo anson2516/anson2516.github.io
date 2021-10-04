@@ -7,6 +7,7 @@ const getResult = async() => {
     const res = await fetch('https://data.weather.gov.hk/weatherAPI/opendata/weather.php?dataType=rhrread&lang=tc')
     const data = await res.json()
     now.innerHTML = data.updateTime.slice(0,10)
+    console.log(data)
     return data
 }
 
