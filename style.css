@@ -276,6 +276,10 @@ a.assItem:hover {
         flex-direction: column-reverse;
     }
     .contactInf li{
-        margin-top: 10px;
+        font-size: 1.1rem;
+        margin: 10px 0px 0px 0px;
+    }
+    .contactInf li a{
+        text-decoration: none;
     }
 }
