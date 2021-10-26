@@ -8,7 +8,7 @@
 .section{
     display: flex;
     height: 100vh;
-    background: repeating-linear-gradient(31deg, #711a63c2, transparent 378px);
+    background: repeating-linear-gradient(10deg, #37ada3c2, transparent 398px);
 }
 .hidden{
     display: none ;
@@ -19,7 +19,7 @@
   .nav{
     flex: 1;
     display: block;
-    background: #a16798;
+    /* background: #a16798; */
   }
   .nav-menu{
     display: flex;
