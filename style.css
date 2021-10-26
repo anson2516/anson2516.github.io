@@ -4,6 +4,7 @@
     font-family: 'Open Sans',Arial,sans-serif;
 }
 li{
+    
     font-size: 1.5rem;
     margin: 15px 0px;
     list-style: none;
@@ -139,6 +140,14 @@ nav{
     justify-content: space-evenly;
     margin: 20px 100px;
     DISPLAY: flex;
+}
+.skillscontainerUl{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+.skillscontainerUl li{
+    width: 15rem;
 }
 #mySkills img{
     width: 65%;
