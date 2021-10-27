@@ -96,6 +96,8 @@ nav{
     padding-top: 20px;
     text-align: center;
     width: 100%;
+    position: absolute;
+    top: 200px;
 }
 .scrollDownBtn{
     fill: white;
