@@ -168,6 +168,9 @@ nav{
     flex-wrap: wrap;    
     justify-content: center;
 }
+.assessment a{
+    margin-top: 45px;
+}
 .assessmentImg{
     /* width: 28vw;
     height: 300px; */

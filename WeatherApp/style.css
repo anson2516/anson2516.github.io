@@ -70,24 +70,9 @@ ul li{
     border: solid #acacdf24;
 }
 
-/* .lowerContent{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 60px;
-}
-.lowerContentItem{
-    text-align: center;
-    display: flex;
-    background: #0000ff61;
-    border-radius: 50px;
-    padding: 20px;
-} */
 
-@keyframes kenburn {
-    from{
-        transform: scale(1);
-    }
-    to{
-        transform: scale(1.5);
-    }
+
+@media only screen and (max-width: 768px){
+    
 }
+
