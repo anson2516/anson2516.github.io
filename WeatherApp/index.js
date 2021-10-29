@@ -61,14 +61,14 @@ getTodayWeather()
 
 getResult()
 .then((data)=>{
-    console.log(data.generalSituation)
-    today.innerHTML = `${dayjs().$M+1}月${dayjs().$D}日  ${data.weatherForecast[6].week}`
+    console.log(data.weatherForecast)
+    today.innerHTML = `${dayjs().$M+1}月${dayjs().$D}日  ${data.weatherForecast[0].week}`
     generalSituation.innerHTML = data.generalSituation
 
-    week1.innerHTML = data.weatherForecast[0].week;
-    week2.innerHTML = data.weatherForecast[1].week;
-    week3.innerHTML = data.weatherForecast[2].week;
-    week4.innerHTML = data.weatherForecast[3].week;
+    week1.innerHTML = data.weatherForecast[1].week;
+    week2.innerHTML = data.weatherForecast[2].week;
+    week3.innerHTML = data.weatherForecast[3].week;
+    week4.innerHTML = data.weatherForecast[4].week;
 
     week1Icon.src = `./weatherIcon/${data.weatherForecast[0].ForecastIcon}.png`  
     week2Icon.src = `./weatherIcon/${data.weatherForecast[1].ForecastIcon}.png`  
@@ -97,8 +97,8 @@ getResult()
 
 week1Date.innerHTML = `${dayjs().$M+1}月${dayjs().$D+1}日`
 week2Date.innerHTML = `${dayjs().$M+1}月${dayjs().$D+2}日`
-week3Date.innerHTML = `${dayjs().$M+1}月${dayjs().$D+3}日`
-week4Date.innerHTML = `${dayjs().$M+1}月${dayjs().$D+4}日`
+// week3Date.innerHTML = `${dayjs().$M+1}月${dayjs().$D+3}日`
+// week4Date.innerHTML = `${dayjs().$M+1}月${dayjs().$D+4}日`
 
 
 
