@@ -97,8 +97,8 @@ getResult()
 
 week1Date.innerHTML = `${dayjs().$M+1}月${dayjs().$D+1}日`
 week2Date.innerHTML = `${dayjs().$M+1}月${dayjs().$D+2}日`
-// week3Date.innerHTML = `${dayjs().$M+1}月${dayjs().$D+3}日`
-// week4Date.innerHTML = `${dayjs().$M+1}月${dayjs().$D+4}日`
+week3Date.innerHTML = `${dayjs().$M+1}月${dayjs().$D+3}日`
+week4Date.innerHTML = `${dayjs().$M+1}月${dayjs().$D+4}日`
 
 
 
