@@ -1,44 +1,53 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans',Arial,sans-serif;
+    font-family: 'Open Sans', Arial, sans-serif;
 }
-li{
-    
+
+li {
     font-size: 1.5rem;
     margin: 15px 0px;
     list-style: none;
     font-weight: bolder;
     color: #0089ffa8;
 }
+
 li:hover {
     color: black;
     transform: scale(1.2);
 }
-html{
-    scroll-behavior:smooth;
+
+html {
+    scroll-behavior: smooth;
 }
-#home{
+
+#home {
     background-image: url(./img/bk1.jpg);
     /* background-size:cover; */
     background-size: 100% 100%;
     height: 100vh;
     background-repeat: no-repeat;
     color: white;
-    
 }
-h1{
+
+h1 {
     font-weight: bolder;
     font-family: 'blacker-sans-display-trial-extralight-9', sans-serif;
     text-shadow: 5px 5px 3px #000;
     font-size: -webkit-xxx-large;
 }
-h2{
+
+h2 {
     text-align: center;
     text-decoration: underline;
     letter-spacing: 1px;
 }
-nav{
+
+.haha {
+    display: none;
+}
+
+nav {
     width: 100%;
     position: fixed;
     top: 0;
@@ -49,7 +58,8 @@ nav{
     background: rgb(12 12 12 / 30%);
     z-index: 3;
 }
-#logo{
+
+#logo {
     padding: 18px;
     font-size: xx-large;
     font-weight: bolder;
@@ -57,13 +67,14 @@ nav{
     text-decoration: none;
 }
 
-.navBar{
+.navBar {
     display: flex;
     justify-content: space-around;
     list-style: none;
-    width: 100%; 
+    width: 100%;
     transition: top 0.3s;
 }
+
 .navbarItem {
     display: flex;
     margin: 0 10px;
@@ -72,26 +83,31 @@ nav{
     cursor: pointer;
     z-index: 5;
 }
-.navbarItem a{
+
+.navbarItem a {
     color: #f0f0f0c7;
     text-decoration: none;
 }
-.weather{
+
+.weather {
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
     padding-top: 150px;
 }
-.weather p{
+
+.weather p {
     text-align: center;
     margin-top: 2px;
     font-size: large;
 }
-.navbarItem a:hover{
+
+.navbarItem a:hover {
     transform: scale(1.1);
     color: white;
 }
-.intro{
+
+.intro {
     line-height: 68px;
     padding-top: 20px;
     text-align: center;
@@ -99,7 +115,8 @@ nav{
     position: absolute;
     top: 200px;
 }
-.scrollDownBtn{
+
+.scrollDownBtn {
     fill: white;
     display: block;
     position: absolute;
@@ -111,83 +128,100 @@ nav{
     right: 0;
     animation: hang1 2s infinite;
 }
-#aboutMe{
+
+#aboutMe {
     border-bottom: solid 1px #8080802e;
     padding: 60px;
     background: white;
     color: #5f5b5b;
 }
-.content{
+
+.content {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.content>p{
+
+.content>p {
     line-height: 2rem;
     font-size: 1.5rem;
-    max-width: 483px;;
+    max-width: 483px;
+    ;
 }
-#anson{
+
+#anson {
     max-width: 268px;
 }
-#mySkills{
+
+#mySkills {
     box-sizing: border-box;
     border-bottom: solid 1px #8080802e;
     padding: 60px 0px;
-    text-align: center;  
-    background: #ebebeb;  
+    text-align: center;
+    background: #ebebeb;
     width: 100%;
 }
-.skillscontainer{
+
+.skillscontainer {
     justify-content: space-evenly;
     margin: 20px 100px;
     DISPLAY: flex;
 }
-.skillscontainerUl{
+
+.skillscontainerUl {
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
 }
-.skillscontainerUl li{
+
+.skillscontainerUl li {
     width: 15rem;
 }
-#mySkills img{
+
+#mySkills img {
     width: 65%;
 }
-#works{
+
+#works {
     width: 100%;
     border-bottom: solid 1px #8080802e;
     padding: 60px 0px;
     background: white;
     color: #5f5b5b;
 }
-.assessment{
+
+.assessment {
     margin-top: 30px;
     width: 100%;
     display: flex;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
     justify-content: center;
 }
-.assessment a{
+
+.assessment a {
     margin-top: 45px;
 }
-.assessmentImg{
+
+.assessmentImg {
     /* width: 28vw;
     height: 300px; */
     margin: 5px 20px;
-    border: solid 1px; 
+    border: solid 1px;
     animation: hang2 2s infinite;
 }
+
 a.assItem:hover {
     transform: scale(1.05);
 }
-.assItem p{
+
+.assItem p {
     text-align: center;
     text-decoration: none;
     color: black;
     font-size: 1.3rem;
 }
-#contact{
+
+#contact {
     height: 128px;
     background: #5f5b5b;
     padding: 15px;
@@ -195,6 +229,7 @@ a.assItem:hover {
     color: white;
     letter-spacing: 1px;
 }
+
 .contactInf {
     padding: 30px;
     display: flex;
@@ -202,98 +237,97 @@ a.assItem:hover {
     list-style: none;
     font-size: 20px;
 }
-.contactInf a{
+
+.contactInf a {
     color: white;
 }
 
-@keyframes hang1{
-    0%{
-        transform: translate(0,0);
+@keyframes hang1 {
+    0% {
+        transform: translate(0, 0);
     }
-    50%{
-        transform:translate(0,20px);
+    50% {
+        transform: translate(0, 20px);
     }
-    100%{
-        transform: translate(0,0);
-    }
-}
-@keyframes hang2{
-    0%{
-        transform: translate(0,0);
-    }
-    50%{
-        transform:translate(0,5px);
-    }
-    100%{
-        transform: translate(0,0);
+    100% {
+        transform: translate(0, 0);
     }
 }
 
-
+@keyframes hang2 {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(0, 5px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
 
 @media only screen and (max-width: 768px) {
-   h1{
-       font-size: revert;
-   } 
-   nav{
-       flex-direction: column;
-       position: unset;
-   }
-   .navBar{
-       flex-direction: column;
-       width: 100%;
-   }
-   .navbarItem{
-       justify-content: center;
-       padding: 8px;
-       font-size: 1.5rem;
-   }
-   #logo{
-       text-align: center;
-   }
+    h1 {
+        font-size: revert;
+    }
+    nav {
+        flex-direction: column;
+        position: unset;
+    }
+    .navBar {
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbarItem {
+        justify-content: center;
+        padding: 8px;
+        font-size: 1.5rem;
+    }
+    #logo {
+        text-align: center;
+    }
     #logo {
         padding: 10px;
         font-size: xxx-large;
         font-weight: bolder;
         letter-spacing: 3px;
     }
-    .weather{
+    .weather {
         display: none;
     }
-   .intro{
-       margin-top: 70px;
-       padding-top: 0;
-   }
-   .content{
-       flex-direction: column-reverse;
-   }
-    .scrollDownBtn{
+    .intro {
+        margin-top: 70px;
+        padding-top: 0;
+    }
+    .content {
+        flex-direction: column-reverse;
+    }
+    .scrollDownBtn {
         display: none;
     }
-    #aboutMe{
+    #aboutMe {
         padding: 60px 15px;
     }
-
-    .assessment{
+    .assessment {
         text-align: center;
         flex-direction: column;
     }
-    .assessmentImg{
+    .assessmentImg {
         width: 80vw;
         animation: none;
     }
-    .assessmentImg:hover{
-        transform:scale(1.02);
+    .assessmentImg:hover {
+        transform: scale(1.02);
     }
-    .contactInf{
+    .contactInf {
         padding: 0;
         flex-direction: column-reverse;
     }
-    .contactInf li{
+    .contactInf li {
         font-size: 1.1rem;
         margin: 10px 0px 0px 0px;
     }
-    .contactInf li a{
+    .contactInf li a {
         text-decoration: none;
     }
 }
