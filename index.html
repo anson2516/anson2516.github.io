@@ -5,55 +5,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8b933ee6ed.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <title>Document</title>
+    <title>Anson Leung Portfolio</title>
 </head>
 
-<body class="bg-[url('src/img/1.jpg')] bg-no-repeat bg-cover">
-    <nav class="h-20 px-4 py-5 bg-white shadow-lg 1100:hidden">
+<body class="bg-[url('./src/img/1.jpg')] bg-no-repeat bg-cover">
+    <nav class="flex items-center justify-end h-20 px-4 py-5 bg-white shadow-lg 1100:hidden">
         <!-- Mobile menu button -->
         <div class="flex items-center justify-end 1100:hidden">
+
             <button id="mobile_btn" class="outline-none mobile-menu-button">
-                <svg class="w-6 h-6 text-gray-500 hover:text-green-500"
-                x-show="!showMenu"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
+                <div id="nav-icon4">
+                    <span></span>
+                </div>
             </button>
         </div>
         <!-- mobile menu -->
         <div class="absolute left-0 hidden w-full bg-white mobile_menu top-20">
             <ul class="relative z-10 bg-white drop-shadow-md">
-                <li class="flex items-center justify-start gap-3 py-4 pl-4 cursor-pointer mobile_card_toggle active" data-type_m="about">
-                    <i class="transition-all duration-500 fa-regular fa-user"></i>
-                    <h3>About</h3>
+                <li id="fasda" class="flex items-center justify-start gap-3 py-4 pl-4 cursor-pointer mobile_card_toggle active transition-all duration-500 group hover:bg-[#ed7458]" data-type_m="about">
+                    <i class="transition-all duration-500 ease-out fa-regular fa-solid fa-user group-hover:text-white"></i>
+                    <h3 class="transition-all duration-500 group-hover:text-white">About</h3>
                 </li>
-                <li class="flex items-center justify-start gap-3 py-4 pl-4 cursor-pointer mobile_card_toggle" data-type_m="resume">
-                    <i class="transition-all duration-500 fa-solid fa-paste"></i>
-                    <h3>Resume</h3>
+                <li class="flex items-center justify-start gap-3 py-4 pl-4 cursor-pointer mobile_card_toggle transition-all duration-500 group hover:bg-[#ed7458]" data-type_m="resume">
+                    <i class="transition-all duration-500 ease-out fa-solid fa-paste group-hover:text-white"></i>
+                    <h3 class="transition-all duration-500 group-hover:text-white">Resume</h3>
                 </li>
-                <li class="flex items-center justify-start gap-3 py-4 pl-4 cursor-pointer mobile_card_toggle" data-type_m="projects">
-                    <i class="transition-all duration-500 fa-solid fa-briefcase"></i>
-                    <h3>Projects</h3>
+                <li class="flex items-center justify-start gap-3 py-4 pl-4 cursor-pointer mobile_card_toggle transition-all duration-500 group hover:bg-[#ed7458]" data-type_m="projects">
+                    <i class="transition-all duration-500 ease-out fa-solid fa-briefcase group-hover:text-white"></i>
+                    <h3 class="transition-all duration-500 group-hover:text-white">Projects</h3>
                 </li>
             </ul>
         </div>
     </nav>
     <div class="linear_bg">
-        <div class="container grid justify-between grid-cols-12 max-w-[1560px] mx-auto 1100:py-[220px] gap-6 md:gap-10">
-            <div id="left" class="col-span-12 pt-4 pb-12 bg-white rounded 1100:pb-32 px-9 h-fit 1100:col-span-4 top-44 drop-shadow-md" data-type_m_target="about" data-aos-duration="1000" data-aos="fade-right">
+        <div class="container grid justify-between grid-cols-12 max-w-[1560px] mx-auto 1100:py-[220px] 1100:gap-10">
+            <div id="left" class="col-span-12 pt-4 pb-12 bg-white 1100:rounded 1100:pb-32 px-9 h-fit 1100:col-span-4 top-44 1100:drop-shadow-md" data-type_m_target="about" data-aos-duration="1000" data-aos="fade-right">
                 <div class="max-w-[390px] mx-auto">
-                    <div class="w-fit max-w-[234px] p-[5px] mx-auto mb-6 rounded bg-[#FFDC9F] drop-shadow-lg"><img src="src/img/me.png" class=""></div>
+                    <div class="w-fit max-w-[234px] p-[5px] mx-auto mb-6 rounded bg-[#FFDC9F] drop-shadow-lg"><img src="./img/me.png" class=""></div>
                     <h3 class="font-bold text-center text-[#ED7458]">Anson Leung</h3>
                     <p class="font-bold text-center text-gray-500">Web-Developer</p>
                     <div class="p-6 bg-[#ED7458] rounded mt-9 drop-shadow-lg">
@@ -72,16 +66,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex justify-center rounded-lg px-9 py-5 max-w-[220px] items-center mx-auto mt-14 cursor-pointer bg-[#FFDC9F] drop-shadow-md">
-                        <i class="mr-2 fa-solid fa-download"></i>
-                        <p class="font-bold">Download CV</p>
+                    <div class="r rounded-lg px-9 py-5 max-w-[220px] mx-auto mt-14 cursor-pointer bg-[#FFDC9F] drop-shadow-md">
+                        <a class="flex items-center justify-cente" href="./pdf/CV FROM ANSON.pdf" download>
+                            <i class="mr-2 fa-solid fa-download"></i>
+                            <p class="font-bold">Download CV</p>
+                        </a>
                     </div>
                 </div>
             </div>
             <div id="right" class="col-span-12 1100:col-span-8">
-                <div class="flex gap-6 px-16 py-6 ml-auto mr-0 bg-white border drop-shadow-md rounded-xl w-fit" data-aos-duration="1000" data-aos="fade-left">
+                <div class="hidden gap-6 px-16 py-6 ml-auto mr-0 bg-white border drop-shadow-md 1100:flex rounded-xl w-fit" data-aos-duration="1000" data-aos="fade-left">
                     <div class="card_toggle drop-shadow-xl cursor-pointer group btn_bg text-white hover:text-[#ED7458] hover:bg-white flex flex-col items-center  justify-center min-w-[80px] min-h-[80px] rounded-2xl " data-type="about">
-                        <i class="transition-all duration-500 fa-regular fa-user"></i>
+                        <i class="transition-all duration-500 fa-regular fa-solid fa-user"></i>
                         <p class="text-white group-hover:text-[#ED7458] transition-all duration-500">About</p>
                     </div>
                     <div class="card_toggle drop-shadow-xl cursor-pointer group btn_bg text-white hover:text-[#ED7458] hover:bg-white flex flex-col items-center  justify-center min-w-[80px] min-h-[80px] rounded-2xl" data-type="resume">
@@ -93,12 +89,14 @@
                         <p class="text-white group-hover:text-[#ED7458] transition-all duration-500">Projects</p>
                     </div>
                 </div>
-                <div id="displayarea" class="py-12 mt-12 bg-white 2xl:py-24 px-9 2xl:px-32 rounded-xl drop-shadow-md" data-aos-duration="1000" data-aos="fade-up">
-                    <div id="about" class="card">
+                <div id="displayarea" class="py-12 bg-white 1100:mt-12 2xl:py-24 px-9 2xl:px-32 1100:rounded-xl 1100:drop-shadow-md" data-aos-duration="1000" data-aos="fade-up">
+                    <div id="about" class="card" data-type_m_target="about">
                         <h2 class="mb-12 after_line">About Me</h2>
-                        <h3 class="text-[#525252]">I am a committed, driven and hardworking person who is eager to learn new skills. I am seeking a position in the field of web programming where I can utilize my skills to further work towards personal and professional development
-                            and contribute towards the prosperity of the company.
-                        </h3>
+                        <h3 class="text-[#525252]">My name is Anson, 31 years old,I am a committed, driven and hardworking person who is eager to learn new skills. I’ve been developing websites for about one years now.</h3>
+                        <br>
+                        <h3 class="text-[#525252]">I honestly believe that with the amount of tutorials on YouTube,Udemy, one can learn everything, without going to college. </h3>
+                        <br>
+                        <h3 class="text-[#525252]">I am seeking a position in the field of web programming where I can utilize my skills to further work towards personal and professional development and contribute towards the prosperity of the company.</h3>
                     </div>
                     <div id="resume" class="hidden card" data-type_m_target="resume">
                         <h2 class="mb-12 after_line">Resume</h2>
@@ -145,17 +143,18 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="workingSkills_outer" class="bg-[#ffead269] p-6 rounded ">
-                            <div class="flex items-end gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="71" height="61" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+                        <div class="flex items-end gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="71" height="61" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
 
-                                    <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#F95054" stroke="none">
-                                    <path d="M940 5113 c-80 -8 -200 -36 -272 -65 -85 -32 -108 -58 -108 -120 0 -29 26 -58 252 -285 l253 -253 -168 -168 -167 -167 -237 236 c-250 249 -274 269 -310 269 -62 0 -87 -30 -130 -154 -145 -428 21 -921 398 -1177 87 -59 230 -124 329 -150 128 -33 333 -38 465 -10 l100 21 180 -180 180 -180 -621 -622 -620 -623 -222 -672 c-122 -369 -222 -686 -222 -703 0 -43 47 -90 90 -90 17 0 334 100 703 222 l672 222 623 620 622 621 181 -181 181 -181 -18 -69 c-27 -99 -27 -368 0 -474 97 -383 373 -665 754 -767 86 -24 116 -27 257 -26 168 0 228 10 369 63 88 33 117 74 101 137 -4 18 -96 118 -253 276 l-247 247 168 168 167 167 253 -253 c224 -223 257 -252 284 -252 53 0 81 20 108 75 63 135 93 333 75 500 -48 446 -354 799 -790 908 -116 29 -348 31 -464 3 l-79 -18 -181 181 -181 181 816 817 c766 767 818 822 850 888 31 64 34 77 34 160 -1 164 0 163 -349 511 -277 277 -306 304 -361 325 -92 36 -218 33 -305 -6 -61 -27 -114 -77 -888 -849 l-822 -821 -181 181 -181 181 18 79 c28 116 26 348 -3 464 -108 431 -460 741 -896 789 -94 11 -136 12 -207 4z m235 -208 c280 -49 527 -246 631 -503 48 -119 59 -179 59 -322 0 -118 -4 -147 -29 -232 -18 -65 -26 -107 -21 -125 4 -18 84 -106 218 -241 l212 -212 -200 -200 -200 -200 -215 214 c-118 118 -225 217 -236 220 -13 4 -59 -5 -110 -21 -81 -25 -103 -27 -249 -27 -155 0 -163 1 -255 32 -366 126 -597 460 -577 832 10 177 -12 183 241 -68 122 -121 232 -225 245 -232 54 -27 73 -13 343 257 141 142 262 270 267 286 7 18 7 36 0 55 -5 15 -110 127 -232 249 -121 122 -219 225 -216 228 9 8 116 22 180 24 31 0 96 -6 144 -14z m3153 0 c50 -21 547 -515 573 -570 48 -102 23 -148 -190 -360 l-171 -170 -367 368 -368 367 170 171 c209 210 253 235 353 194z m-1047 -1480 c-404 -404 -685 -692 -691 -710 -29 -78 47 -154 126 -125 17 6 311 293 709 691 l680 679 148 -148 147 -147 -1485 -1485 -1485 -1485 -147 147 -148 148 503 503 502 503 0 43 c0 60 -41 101 -101 101 l-43 0 -503 -502 -503 -503 -148 148 -147 147 1485 1485 1485 1485 147 -147 148 -148 -679 -680z m204 -1394 c133 -133 220 -212 238 -216 18 -5 60 3 125 21 86 26 113 29 232 29 142 0 204 -12 322 -59 92 -38 164 -85 250 -165 191 -179 288 -434 261 -683 -6 -55 -14 -103 -18 -106 -3 -3 -106 94 -228 215 -122 122 -234 227 -249 232 -19 7 -37 7 -55 0 -16 -5 -144 -126 -286 -267 -270 -270 -284 -289 -257 -343 7 -13 111 -124 233 -246 l220 -221 -39 -9 c-21 -4 -95 -8 -164 -7 -97 0 -142 5 -203 22 -277 78 -488 280 -579 552 -30 90 -32 103 -32 250 -1 142 1 163 27 251 27 90 28 99 13 125 -8 16 -107 121 -220 234 l-206 205 197 197 c109 109 200 198 203 198 2 0 99 -94 215 -209z m-2560 -1111 c175 -175 317 -321 315 -323 -3 -2 -75 -27 -160 -56 l-155 -51 -217 217 -218 218 52 158 c29 86 55 157 58 157 3 0 149 -144 325 -320z m-221 -499 c-6 -6 -417 -141 -421 -138 -2 2 113 363 133 416 3 10 51 -31 149 -129 79 -79 142 -146 139 -149z"/>
-                                    <path d="M2297 2435 c-34 -34 -40 -67 -23 -110 17 -41 71 -69 111 -59 43 11 75 52 75 96 0 85 -104 132 -163 73z"/>
-                                    </g>
-                                    </svg>
-                                <h3>Skills</h3>
-                            </div>
+                                <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#F95054" stroke="none">
+                                <path d="M940 5113 c-80 -8 -200 -36 -272 -65 -85 -32 -108 -58 -108 -120 0 -29 26 -58 252 -285 l253 -253 -168 -168 -167 -167 -237 236 c-250 249 -274 269 -310 269 -62 0 -87 -30 -130 -154 -145 -428 21 -921 398 -1177 87 -59 230 -124 329 -150 128 -33 333 -38 465 -10 l100 21 180 -180 180 -180 -621 -622 -620 -623 -222 -672 c-122 -369 -222 -686 -222 -703 0 -43 47 -90 90 -90 17 0 334 100 703 222 l672 222 623 620 622 621 181 -181 181 -181 -18 -69 c-27 -99 -27 -368 0 -474 97 -383 373 -665 754 -767 86 -24 116 -27 257 -26 168 0 228 10 369 63 88 33 117 74 101 137 -4 18 -96 118 -253 276 l-247 247 168 168 167 167 253 -253 c224 -223 257 -252 284 -252 53 0 81 20 108 75 63 135 93 333 75 500 -48 446 -354 799 -790 908 -116 29 -348 31 -464 3 l-79 -18 -181 181 -181 181 816 817 c766 767 818 822 850 888 31 64 34 77 34 160 -1 164 0 163 -349 511 -277 277 -306 304 -361 325 -92 36 -218 33 -305 -6 -61 -27 -114 -77 -888 -849 l-822 -821 -181 181 -181 181 18 79 c28 116 26 348 -3 464 -108 431 -460 741 -896 789 -94 11 -136 12 -207 4z m235 -208 c280 -49 527 -246 631 -503 48 -119 59 -179 59 -322 0 -118 -4 -147 -29 -232 -18 -65 -26 -107 -21 -125 4 -18 84 -106 218 -241 l212 -212 -200 -200 -200 -200 -215 214 c-118 118 -225 217 -236 220 -13 4 -59 -5 -110 -21 -81 -25 -103 -27 -249 -27 -155 0 -163 1 -255 32 -366 126 -597 460 -577 832 10 177 -12 183 241 -68 122 -121 232 -225 245 -232 54 -27 73 -13 343 257 141 142 262 270 267 286 7 18 7 36 0 55 -5 15 -110 127 -232 249 -121 122 -219 225 -216 228 9 8 116 22 180 24 31 0 96 -6 144 -14z m3153 0 c50 -21 547 -515 573 -570 48 -102 23 -148 -190 -360 l-171 -170 -367 368 -368 367 170 171 c209 210 253 235 353 194z m-1047 -1480 c-404 -404 -685 -692 -691 -710 -29 -78 47 -154 126 -125 17 6 311 293 709 691 l680 679 148 -148 147 -147 -1485 -1485 -1485 -1485 -147 147 -148 148 503 503 502 503 0 43 c0 60 -41 101 -101 101 l-43 0 -503 -502 -503 -503 -148 148 -147 147 1485 1485 1485 1485 147 -147 148 -148 -679 -680z m204 -1394 c133 -133 220 -212 238 -216 18 -5 60 3 125 21 86 26 113 29 232 29 142 0 204 -12 322 -59 92 -38 164 -85 250 -165 191 -179 288 -434 261 -683 -6 -55 -14 -103 -18 -106 -3 -3 -106 94 -228 215 -122 122 -234 227 -249 232 -19 7 -37 7 -55 0 -16 -5 -144 -126 -286 -267 -270 -270 -284 -289 -257 -343 7 -13 111 -124 233 -246 l220 -221 -39 -9 c-21 -4 -95 -8 -164 -7 -97 0 -142 5 -203 22 -277 78 -488 280 -579 552 -30 90 -32 103 -32 250 -1 142 1 163 27 251 27 90 28 99 13 125 -8 16 -107 121 -220 234 l-206 205 197 197 c109 109 200 198 203 198 2 0 99 -94 215 -209z m-2560 -1111 c175 -175 317 -321 315 -323 -3 -2 -75 -27 -160 -56 l-155 -51 -217 217 -218 218 52 158 c29 86 55 157 58 157 3 0 149 -144 325 -320z m-221 -499 c-6 -6 -417 -141 -421 -138 -2 2 113 363 133 416 3 10 51 -31 149 -129 79 -79 142 -146 139 -149z"/>
+                                <path d="M2297 2435 c-34 -34 -40 -67 -23 -110 17 -41 71 -69 111 -59 43 11 75 52 75 96 0 85 -104 132 -163 73z"/>
+                                </g>
+                                </svg>
+                            <h3>Skills</h3>
+                        </div>
+                        <div id="workingSkills_outer" class="bg-[#ffead269] p-6 rounded mt-5">
+
 
                             <h4 class="mt-5">I believe myself to be an enthusiastic learner. Here are a couple of languages and tools i've worked with.</h4>
                             <div class="flex mt-8 gap-x-4">
@@ -193,25 +192,25 @@
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="relative p-2 rounded-xl mb-9">
-                                            <a target="_blank" href="https://www.cblsbtko.hk/"><img src="src/img/cbl.png"></a>
+                                            <a target="_blank" href="https://www.cblsbtko.hk/"><img src="./img/cbl.png"></a>
                                             <h4 class="mt-8 text-center underline text-[#ED7458]">TSUEN KWAN O AND SOUTHREN BRIDGE</h2>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="relative p-2 rounded-xl mb-9">
-                                            <a target="_blank" href="https://www.ombudsman.hk/"><img src="src/img/omb2.png"></a>
+                                            <a target="_blank" href="https://www.ombudsman.hk/"><img src="./img/omb2.png"></a>
                                             <h4 class="mt-8 text-center underline text-[#ED7458]">OFFICE OF THE OMBUDSMAN HONG KONG</h2>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="relative p-2 rounded-xl mb-9">
-                                            <a target="_blank" href="https://www.garychengsec.com/tc/"><img src="src/img/garycheng2.png"></a>
+                                            <a target="_blank" href="https://www.garychengsec.com/tc/"><img src="./img/garycheng2.png"></a>
                                             <h4 class="mt-8 text-center underline text-[#ED7458]">GARY CHENG SECURITIES LIMITED</h2>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="relative p-2 rounded-xl mb-9">
-                                            <a target="_blank" href="https://www.epd.gov.hk/epd/tc_chi/how_help/green_procure/green_procure.html"><img src="src/img/epd2.png"></a>
+                                            <a target="_blank" href="https://www.epd.gov.hk/epd/tc_chi/how_help/green_procure/green_procure.html"><img src="./img/epd2.png"></a>
                                             <h4 class="mt-8 text-center underline text-[#ED7458]">ENVIRONMANTAL PROTECTION DEPARTMENT</h2>
                                         </div>
                                     </div>
@@ -245,21 +244,30 @@
                             });
                         </script>
                         <script>
-                            $(".card_toggle").click(function() {
-                                $(".card").hide();
-                                let target = $(this).attr('data-type');
-                                $("#" + target).show();
-                            })
-                            $("#mobile_btn").click(function() {
-                                $(".mobile_menu").toggleClass('hidden');
-                            })
-                            $("[data-type_m]").click(function() {
-                                console.log('111');
-                                $("[data-type_m_target]").hide();
-                                let mobile_target = $(this).attr('data-type_m');
-                                console.log(typeof mobile_target);
-                                $(`[data-type_m_target='${mobile_target}']`).show();
-                            })
+                            $(document).ready(function() {
+                                $(".card_toggle").click(function() {
+                                    $(".card").hide();
+                                    $(".card_toggle").removeClass('active');
+                                    $(this).addClass('active');
+                                    let target = $(this).attr('data-type');
+                                    $("#" + target).show();
+                                })
+                                $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function() {
+                                    $(this).toggleClass('open');
+                                });
+                                $("#mobile_btn").click(function() {
+                                    $(".mobile_menu").toggleClass('hidden');
+                                })
+                                $("[data-type_m]").click(function() {
+                                    console.log('111');
+                                    $("[data-type_m]").removeClass('active');
+                                    $(this).addClass('active');
+                                    $("[data-type_m_target]").hide();
+                                    let mobile_target = $(this).attr('data-type_m');
+                                    console.log(typeof mobile_target);
+                                    $(`[data-type_m_target='${mobile_target}']`).show();
+                                })
+                            });
                         </script>
                         <script>
                             if ($(window).width() > 1100) {
