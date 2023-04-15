@@ -269,7 +269,8 @@
                                 })
                                 $(document).mouseup(function(e) {
                                     if ($(e.target).closest(".container").length === 1) {
-                                        $(".mobile_menu").addClass('hidden')
+                                        $(".mobile_menu").addClass('hidden');
+                                        ("#nav-icon4").removeClass('open');
                                     }
                                 });
                             });
