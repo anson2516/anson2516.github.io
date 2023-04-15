@@ -279,6 +279,17 @@
                                 });
                             });
                         </script>
+                        <script>
+                            if ($(window).width() > 1100) {
+                                AOS.init({
+                                    disable: false,
+                                });
+                            } else {
+                                AOS.init({
+                                    disable: true,
+                                });
+                            }
+                        </script>
                     </div>
                 </div>
             </div>
