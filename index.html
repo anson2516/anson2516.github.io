@@ -17,7 +17,7 @@
 <body class="bg-[url('./src/img/1.jpg')] bg-no-repeat bg-cover">
     <nav class="flex items-center justify-end h-20 px-4 py-5 bg-white shadow-lg 1100:hidden">
         <!-- Mobile menu button -->
-        <div class="flex items-center justify-end 1100:hidden">
+        <div class="flex items-center justify-end 1100:hidden h-[40px] cursor-pointer">
 
             <button id="mobile_btn" class="outline-none mobile-menu-button">
                 <div id="nav-icon4">
@@ -267,21 +267,17 @@
                                     console.log(typeof mobile_target);
                                     $(`[data-type_m_target='${mobile_target}']`).show();
                                 })
+                                $(document).mouseup(function(e) {
+                                    if ($(e.target).closest(".container").length === 1) {
+                                        $(".mobile_menu").toggleClass('hidden')
+                                    }
+                                });
+                                $(document).mouseup(function(e) {
+                                    if ($(e.target).closest(".container").length === 1) {
+                                        $(".mobile_menu").fadeOut(400)
+                                    }
+                                });
                             });
-                        </script>
-                        <script>
-                            if ($(window).width() > 1100) {
-                                AOS.init({
-                                    disable: false,
-                                });
-                            } else {
-                                AOS.init({
-                                    disable: true,
-                                });
-                            }
-                            // $(window).resize(function() {
-
-                            // });
                         </script>
                     </div>
                 </div>
