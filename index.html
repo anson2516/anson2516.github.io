@@ -270,17 +270,18 @@
                             });
                         </script>
                         <script>
-                            $(window).resize(function() {
-                                if ($(window).width() > 1100) {
-                                    AOS.init({
-                                        disable: false,
-                                    });
-                                } else {
-                                    AOS.init({
-                                        disable: true,
-                                    });
-                                }
-                            });
+                            if ($(window).width() > 1100) {
+                                AOS.init({
+                                    disable: false,
+                                });
+                            } else {
+                                AOS.init({
+                                    disable: true,
+                                });
+                            }
+                            // $(window).resize(function() {
+
+                            // });
                         </script>
                     </div>
                 </div>
