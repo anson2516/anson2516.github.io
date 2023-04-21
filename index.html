@@ -17,9 +17,9 @@
 <body class="bg-[url('./src/img/1.jpg')] bg-no-repeat bg-cover">
     <nav class="flex items-center justify-end h-20 px-4 py-5 bg-white shadow-lg 1100:hidden">
         <!-- Mobile menu button -->
-        <div class="flex items-center justify-end 1100:hidden h-[40px] cursor-pointer">
+        <div class="flex items-center justify-end cursor-pointer 1100:hidden">
 
-            <button id="mobile_btn" class="outline-none mobile-menu-button">
+            <button id="mobile_btn" class="outline-none mobile-menu-button h-[40px]">
                 <div id="nav-icon4">
                     <span></span>
                 </div>
@@ -172,18 +172,7 @@
                                     <h4 class="my-4 text-black">CMS - Wordpress</h4>
                                 </div>
                             </div>
-                            <!-- <div id="WorkingSkills" class="flex flex-wrap gap-y-6 gap-x-3 ">
-                                <button class="bg-blue-300 skills_btn">Html</button>
-                                <button class="bg-[#F2F4FF] skills_btn">Css</button>
-                                <button class="bg-[#9272D4] skills_btn">Javascript</button>
-                                <button class="bg-[#EEF5FA] skills_btn">PHP</button>
-                                <button class="bg-[#5185D4] skills_btn">Jquery</button>
-                                <button class="bg-[#F2F4FF] skills_btn">Tailwind</button>
-                                <button class="bg-[#FF6464] skills_btn">Wordpress</button>
-                                <button class="bg-[#EEF5FA] skills_btn">CMS - Wordpress</button>
-                            </div> -->
                         </div>
-
                     </div>
                     <div id="projects" class="hidden card" data-type_m_target="projects">
                         <h2 class="mb-12 after_line">Projects</h2>
@@ -193,25 +182,48 @@
                                     <div class="swiper-slide">
                                         <div class="relative p-2 rounded-xl mb-9">
                                             <a target="_blank" href="https://www.cblsbtko.hk/"><img src="src/img/cbl.png"></a>
-                                            <h4 class="mt-8 text-center underline text-[#ED7458]">TSUEN KWAN O AND SOUTHREN BRIDGE</h2>
+                                            <h4 class="mt-8 text-center underline text-[#ED7458]">TSUEN KWAN O AND SOUTHREN BRIDGE</h4>
+                                            <h5 class="mx-0 my-4">What I Do</h5>
+                                            <ul class="list-disc pl-[20px]">
+                                                <li class="my-2 font-bold">Develop web pages and CMS compliant with Web Standards such as W3C and WCAG2.1.</li>
+                                                <li class="my-2 font-bold">Develop and maintain the user interface.</li>
+                                                <li class="my-2 font-bold">Fixing bugs and testing for usability.</li>
+                                            </ul>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="relative p-2 rounded-xl mb-9">
                                             <a target="_blank" href="https://www.ombudsman.hk/"><img src="src/img/omb2.png"></a>
-                                            <h4 class="mt-8 text-center underline text-[#ED7458]">OFFICE OF THE OMBUDSMAN HONG KONG</h2>
+                                            <h4 class="mt-8 text-center underline text-[#ED7458]">OFFICE OF THE OMBUDSMAN HONG KONG</h4>
+                                            <h5 class="mx-0 my-4">What I Do</h5>
+                                            <ul class="list-disc pl-[20px]">
+                                                <li class="my-2 font-bold">Develop web pages and CMS compliant with Web Standards such as W3C and WCAG2.1.</li>
+                                                <li class="my-2 font-bold">Develop and maintain the user interface.</li>
+                                                <li class="my-2 font-bold">Fixing bugs and testing for usability.</li>
+                                            </ul>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="relative p-2 rounded-xl mb-9">
                                             <a target="_blank" href="https://www.garychengsec.com/tc/"><img src="src/img/garycheng2.png"></a>
-                                            <h4 class="mt-8 text-center underline text-[#ED7458]">GARY CHENG SECURITIES LIMITED</h2>
+                                            <h4 class="mt-8 text-center underline text-[#ED7458]">GARY CHENG SECURITIES LIMITED</h4>
+                                            <h5 class="mx-0 my-4">What I Do</h5>
+                                            <ul class="list-disc pl-[20px]">
+                                                <li class="my-2 font-bold">Develop web pages and CMS</li>
+                                                <li class="my-2 font-bold">Develop and maintain the user interface.</li>
+                                                <li class="my-2 font-bold">Fixing bugs and testing for usability.</li>
+                                            </ul>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="relative p-2 rounded-xl mb-9">
                                             <a target="_blank" href="https://www.epd.gov.hk/epd/tc_chi/how_help/green_procure/green_procure.html"><img src="src/img/epd2.png"></a>
-                                            <h4 class="mt-8 text-center underline text-[#ED7458]">ENVIRONMANTAL PROTECTION DEPARTMENT</h2>
+                                            <h4 class="mt-8 text-center underline text-[#ED7458]">ENVIRONMANTAL PROTECTION DEPARTMENT</h4>
+                                            <h5 class="mx-0 my-4">What I Do</h5>
+                                            <ul class="list-disc pl-[20px]">
+                                                <li class="my-2 font-bold">Develop and maintain the user interface.</li>
+                                                <li class="my-2 font-bold">Fixing bugs and testing for usability.</li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
@@ -252,11 +264,10 @@
                                     let target = $(this).attr('data-type');
                                     $("#" + target).show();
                                 })
-                                $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function() {
-                                    $(this).toggleClass('open');
-                                });
+
                                 $("#mobile_btn").click(function() {
                                     $(".mobile_menu").toggleClass('hidden');
+                                    $('#nav-icon4').toggleClass('open');
                                 })
                                 $("[data-type_m]").click(function() {
                                     console.log('111');
